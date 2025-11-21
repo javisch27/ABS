@@ -86,6 +86,41 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					}
 				}
 			</style>
+
+<style type="text/css">
+
+/* GRID PARA 4 COLUMNAS */ /* CAMBIO */
+.responsive-grid-4 {
+    display: grid !important; /* CAMBIO */
+    grid-template-columns: repeat(4, 1fr); /* CAMBIO */
+    gap: 20px; /* CAMBIO */
+}
+
+/* GRID PARA 3 COLUMNAS */ /* CAMBIO */
+.responsive-grid-3 {
+    display: grid !important; /* CAMBIO */
+    grid-template-columns: repeat(3, 1fr); /* CAMBIO */
+    gap: 20px; /* CAMBIO */
+}
+
+/* RESPONSIVE (TABLET) */ /* CAMBIO */
+@media (max-width: 1024px) {
+    .responsive-grid-4,
+    .responsive-grid-3 {
+        grid-template-columns: repeat(2, 1fr); /* CAMBIO */
+    }
+}
+
+/* RESPONSIVE (MOBILE) */ /* CAMBIO */
+@media (max-width: 600px) {
+    .responsive-grid-4,
+    .responsive-grid-3 {
+        grid-template-columns: repeat(1, 1fr); /* CAMBIO */
+    }
+}
+
+</style>
+
 					<style type="text/css" id="wp-custom-css">
 			.atu-agency-video img {
 	display: none !important;
@@ -419,7 +454,7 @@ margin: 0 auto;
 
 									<div data-elementor-type="wp-post" data-elementor-id="203" class="elementor elementor-203">
 						<section class="elementor-section elementor-top-section elementor-element elementor-element-5cb8b6d elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="5cb8b6d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/videos.pexels.com\/video-files\/7710447\/7710447-hd_1366_720_25fps.mp4&quot;}">
-								<div class="elementor-background-video-container elementor-hidden-mobile" aria-hidden="true">
+								<div class="elementor-background-video-container" aria-hidden="true">
 													<video class="elementor-background-video-hosted" autoplay="" muted="" playsinline="" loop="" src="https://videos.pexels.com/video-files/7710447/7710447-hd_1366_720_25fps.mp4" style="width: 1520.8px; height: 855.45px;"></video>
 											</div>
 									<div class="elementor-background-overlay"></div>
@@ -507,7 +542,7 @@ margin: 0 auto;
 					<h2 class="elementor-heading-title elementor-size-default">Services<br><br></h2>				</div>
 				</div>
 				<div style="max-width: 1400px; margin: 0 auto; font-size:18px; line-height:1.6;">
-					<div style="display:flex; justify-content:space-between; margin-bottom:30px;">
+					<div class="responsive-grid-4" style="margin-bottom:30px;">
 						<div style="flex:1; padding:10px; text-align:center;">
 							<h4 style="text-align:center;">Ce service social s’adresse aux:</h4>
 							<ul style="list-style-type:none; padding:0; margin:0;">
@@ -549,7 +584,7 @@ margin: 0 auto;
 						<h2 class="elementor-heading-title elementor-size-default"><br>Domaines d’intervention<br><br><br></h2>
 					</div>
 
-					<div style="display:flex; justify-content:space-between; margin-bottom:30px;">
+					<div class="responsive-grid-3" style="margin-bottom:30px;">
 						<div style="flex:1; padding:10px; text-align:center;">
 							<h4 style="text-align:center;">Difficultés personnelles et familiales</h4>
 							<p>Accompagnement dans le cadre de conflits familiaux, d’une séparation, d’un divorce, d’une démarche de demande de mise sous protection (curatelle, tutelle, etc), d’un décès, d’une hospitalisation, d'un mal-être, etc.</p>
@@ -564,7 +599,7 @@ margin: 0 auto;
 						</div>
 					</div>
 
-					<div style="display:flex; justify-content:space-between; margin-bottom:30px; flex-direction:row-reverse;">
+					<div class="responsive-grid-3" style="display:flex; justify-content:space-between; margin-bottom:30px; flex-direction:row-reverse;">
 						<div style="flex:1; padding:10px; text-align:center;">
 							<h4 style="text-align:center;">Difficultés budgétaires</h4>
 							<p>Aide et accompagnement à la gestion du budget, à la constitution de demandes d’aides financières, de dossiers de surendettement, d’échelonnement de créances, de dégrèvement, etc.</p>
@@ -580,7 +615,7 @@ margin: 0 auto;
 						
 					</div>
 
-					<div style="display:flex; justify-content:space-between; margin-bottom:30px; flex-direction:row-reverse;">
+					<div class="responsive-grid-3" style="display:flex; justify-content:space-between; margin-bottom:30px; flex-direction:row-reverse;">
 						<div style="flex:1; padding:10px; text-align:center;">
 							<h4 style="text-align:center;">Actions de prévention</h4>
 							<p>Aide et accompagnement face à une situation de surendettement, d’addiction, etc.</p>
